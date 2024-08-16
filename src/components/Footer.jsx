@@ -4,13 +4,13 @@ import { Link, NavLink } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer className='pt-[100px] w-full flex-col gap-[20px]  justify-center flex items-center'>
-      <div className="container border-b-2 pb-[50px] border-slate-600 flex  justify-between">
-        <div className="leftside gap-4 flex flex-col  justify-center">
-          <img src="indir.svg" alt="" className='w-[162px] h-40px' />
-          <p className='text-[18px] font-medium w-[500px]'>Launch your personalized marketplace effortlessly with Evologia's Template</p>
+      <div className="border-b-2 w-full pb-[50px] border-slate-600 flex flex-col md:flex-row  justify-between">
+        <div className="leftside gap-4 flex items-center flex-col md:flex-row  justify-center">
+          <img src="/assets/indir.svg" alt="" className='w-[162px] h-40px' />
+          <p className='text-[18px] text-wrap font-medium w-full text-center md:w-[300px]'>Launch your personalized marketplace effortlessly with Evologia's Template</p>
         </div>
 
-        <div className='rightside gap-[120px] flex'>
+        <div className='rightside justify-around mt-3 w-full md:gap-[120px] md:mt-0 md:w-auto md:justify-normal flex'>
           <ul>
             <li className='font-bold'>Menu</li>
             <li>Store</li>
@@ -30,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="container py-[20px] flex justify-between">
+      <div className="py-[20px] flex flex-col md:flex-row justify-between">
         <p>© Copyright 2024 | Made by Prestgg.</p>
         <div className="links">
           <Link to="/terms-and-conditions" className='hover:underline hover:opacity-50'>Privacy Policy </Link>

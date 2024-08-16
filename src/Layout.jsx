@@ -18,7 +18,7 @@ const Layout = () => {
   return (
     <>
     <Header/>
-    <div className="flex items-center flex-col px-14  mt-20">
+    <div className="flex items-center flex-col container px-14  mt-20">
       <Routes>
         <Route index path="/" element={<Home/>}/>
         <Route path="faq" element={<Faq/>}/>
