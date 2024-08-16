@@ -66,8 +66,13 @@ main{
   width: 50%;
   height: 100%;
 }
-
+abbr[title]{
+  text-decoration: none !important;
+  appearance: none;
+  border: none;
+}
 .swiper-slide {
+  user-select: none !important;
   text-align: center;
   font-size: 18px;
   overflow: hidden !important;

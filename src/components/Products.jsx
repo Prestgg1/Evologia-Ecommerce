@@ -27,13 +27,16 @@ const Products = () => {
 
   return (
     <>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4'>
-        {loading ? <div className='w-screen mt-20 flex justify-center items-center'><Loader/></div> : products.map(product => (
+
+    <div className={`${loading?'flex':'grid'} grid-cols-1 w-full justify-center items-center md:grid-cols-2 place-items-center lg:grid-cols-3 gap-4 mt-8`}>
+      {loading ?  <Loader/>: products.map(product => (
             <NavLink key={product.id} to={`/store/${product.id}`}>
               <Product product={product} />
             </NavLink>
-          ))}
-      </div>
+          ))}    
+
+    </div>
+
     </>
   )
 }
