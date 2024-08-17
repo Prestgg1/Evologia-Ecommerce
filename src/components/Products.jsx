@@ -5,17 +5,19 @@ import axios from 'axios'
 import Product from './Product'
 
 const Products = () => {
+  const categories = useOutletContext()
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const { category } = useParams()
+  let cat = categories.find((cat)=>cat.name==category)
   const fetchdata = async () => {
     setLoading(true)
     let response;
-    if (category == undefined) {
+    if (cat == undefined) {
       response = await axios.get('https://fakestoreapi.com/products').then(res => res.data)
     }
     else{
-      response = await axios.get('https://fakestoreapi.com/products/category/' + category).then(res=>res.data)
+      response = await axios.get('https://fakestoreapi.com/products/category/' + cat.title).then(res=>res.data)
     }
     let data = response
     setProducts(data)

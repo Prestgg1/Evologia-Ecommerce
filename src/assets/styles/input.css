@@ -55,6 +55,7 @@ html{
 }
 #root{
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -63,8 +64,16 @@ main{
   overflow: hidden;
 }
 .swiper {
-  width: 50%;
-  height: 100%;
+  width: 80%;
+  height: 60vh;
+}
+.marquee{
+  @apply animate-marquee;
+/*   animation-fill-mode: forwards;
+  animation-duration: 10s;
+  animation-delay: 0; */
+  /* animation: marquee 10s linear ease-in 0 infinite alternate; */
+ /*  animation-fill-mode: both; */
 }
 abbr[title]{
   text-decoration: none !important;
@@ -74,20 +83,24 @@ abbr[title]{
 .swiper-slide {
   user-select: none !important;
   text-align: center;
+  width: 100%;
   font-size: 18px;
   overflow: hidden !important;
   background: #fff;
   @apply rounded-3xl;
 
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.swiper-slide img {
+.swiper-slide img,.swiper-slide video {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.s
+.spacer{
+  @apply block;
 }

@@ -1,4 +1,5 @@
 
+import { useContext } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header"
 import Products from "./components/Products";
@@ -7,7 +8,7 @@ import Contact from "./views/Contact";
 import Faq from "./views/Faq";
 import Home from "./views/Home";
 import Store from "./views/Store"
-
+import Data from "./Data";
 
 import {
   Routes,Route,
@@ -15,10 +16,12 @@ import {
 } from "react-router-dom";
 
 const Layout = () => {
+  const {status} = useContext(Data)
   return (
     <>
     <Header/>
-    <div className="flex items-center z-10 flex-col container px-14  mt-20">
+    <div className="flex items-center z-10 flex-col container  mt-20">
+      {status}
       <Routes>
         <Route index path="/" element={<Home/>}/>
         <Route path="faq" element={<Faq/>}/>
