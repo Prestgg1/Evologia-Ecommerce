@@ -3,7 +3,7 @@ import Newsletter from "../components/Newsletter"
 const About = () => {
   return (
     <main className="w-full flex flex-col gap-10 justify-center items-center">
-      <div className="bg-center rounded-3xl h-[60vh] justify-center flex items-center text-white font-extrabold text-7xl bg-cover w-full" style={{ backgroundImage: "url('https://framerusercontent.com/images/puQFxihwf0c9TMWcHmUA5CzFpg.png')" }}>
+      <div className="bg-center rounded-3xl h-[60vh] justify-center flex items-center text-white font-extrabold text-5xl md:text-7xl bg-cover w-full" style={{ backgroundImage: "url('https://framerusercontent.com/images/puQFxihwf0c9TMWcHmUA5CzFpg.png')" }}>
         Our Story
       </div>
       <p className="font-medium text-xl text-center">A smart home is a dwelling equipped with technology that allows for remote control and automation of appliances and systems, such as lighting, heating, air conditioning, and security.</p>

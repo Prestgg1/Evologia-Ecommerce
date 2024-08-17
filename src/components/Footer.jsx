@@ -33,9 +33,9 @@ const Footer = () => {
       <div className="py-[20px] flex flex-col md:flex-row justify-between">
         <p>© Copyright 2024 | Made by Prestgg.</p>
         <div className="links">
-          <Link to="/terms-and-conditions" className='hover:underline hover:opacity-50'>Privacy Policy </Link>
+          <Link to="/privacy-policy" className='hover:underline hover:opacity-50'>Privacy Policy </Link>
           /
-          <Link to="/privacy-policy" className='hover:underline hover:opacity-50'> Terms & Conditions</Link>
+          <Link to="/terms-and-conditions" className='hover:underline hover:opacity-50'> Terms & Conditions</Link>
         </div>
 
       </div>

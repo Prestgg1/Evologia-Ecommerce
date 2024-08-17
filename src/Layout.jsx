@@ -9,24 +9,28 @@ import Faq from "./views/Faq";
 import Home from "./views/Home";
 import Store from "./views/Store"
 import Data from "./Data";
-
+import Policy from "./views/Policy";
 import {
   Routes,Route,
   Outlet
 } from "react-router-dom";
+import Terms from "./views/Terms";
 
 const Layout = () => {
   const {status} = useContext(Data)
   return (
     <>
     <Header/>
-    <div className="flex items-center z-10 flex-col container  mt-20">
+    <div className="flex items-center z-10 flex-col container mt-10 md:mt-20">
       {status}
       <Routes>
+       
         <Route index path="/" element={<Home/>}/>
-        <Route path="faq" element={<Faq/>}/>
-        <Route path="about" element={<About/>}/>
-        <Route path="contact" element={<Contact/>}/>
+        <Route path="faq" exact element={<Faq/>}/>
+        <Route path="terms-and-conditions" exact element={<Terms/>}/>
+        <Route path="privacy-policy" exact element={<Policy/>}/>
+        <Route path="about" exact element={<About/>}/>
+        <Route path="contact" exact element={<Contact/>}/>
         <Route path="store" element={<Store />}>
           <Route path=":category" element={<Products />} />
           <Route path="" element={<Products />} />

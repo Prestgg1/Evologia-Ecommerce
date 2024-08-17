@@ -784,6 +784,14 @@ body {
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -835,10 +843,6 @@ body {
   height: 2.25rem;
 }
 
-.h-\[150px\] {
-  height: 150px;
-}
-
 .h-\[250px\] {
   height: 250px;
 }
@@ -859,10 +863,6 @@ body {
   height: 100%;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -877,10 +877,6 @@ body {
 
 .w-5\/6 {
   width: 83.333333%;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .w-\[162px\] {
@@ -922,6 +918,42 @@ body {
 
 .animate-spin {
   animation: spin 1s linear infinite;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.list-\[alphabet\] {
+  list-style-type: alphabet;
+}
+
+.list-\[upper-alpha\] {
+  list-style-type: upper-alpha;
+}
+
+.list-\[alpha\] {
+  list-style-type: alpha;
+}
+
+.list-\[lower-alpha\] {
+  list-style-type: lower-alpha;
+}
+
+.list-image-none {
+  list-style-image: none;
 }
 
 .grid-cols-1 {
@@ -1135,18 +1167,9 @@ body {
   padding: 2.25rem;
 }
 
-.p-14 {
-  padding: 3.5rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 }
 
 .px-4 {
@@ -1164,9 +1187,19 @@ body {
   padding-bottom: 0.75rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-\[1rem\] {
@@ -1177,16 +1210,6 @@ body {
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-\[50px\] {
@@ -1413,14 +1436,30 @@ abbr[title]{
   display: block;
 }
 
-.placeholder\:py-4::-moz-placeholder {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.marker\:indent-4 *::marker {
+  text-indent: 1rem;
 }
 
-.placeholder\:py-4::placeholder {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.marker\:text-2xl *::marker {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.marker\:text-sky-400 *::marker {
+  color: rgb(56 189 248 );
+}
+
+.marker\:indent-4::marker {
+  text-indent: 1rem;
+}
+
+.marker\:text-2xl::marker {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.marker\:text-sky-400::marker {
+  color: rgb(56 189 248 );
 }
 
 .placeholder\:pl-4::-moz-placeholder {
@@ -1429,14 +1468,6 @@ abbr[title]{
 
 .placeholder\:pl-4::placeholder {
   padding-left: 1rem;
-}
-
-.placeholder\:pl-8::-moz-placeholder {
-  padding-left: 2rem;
-}
-
-.placeholder\:pl-8::placeholder {
-  padding-left: 2rem;
 }
 
 .placeholder\:text-black::-moz-placeholder {
@@ -1489,6 +1520,10 @@ abbr[title]{
     margin-top: 0px;
   }
 
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1501,12 +1536,12 @@ abbr[title]{
     display: none;
   }
 
-  .md\:h-\[150px\] {
-    height: 150px;
-  }
-
   .md\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .md\:w-60 {
+    width: 15rem;
   }
 
   .md\:w-\[300px\] {
@@ -1515,10 +1550,6 @@ abbr[title]{
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-60 {
-    width: 15rem;
   }
 
   .md\:flex-1 {
@@ -1559,6 +1590,11 @@ abbr[title]{
 
   .md\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
