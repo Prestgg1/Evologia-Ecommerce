@@ -6,12 +6,13 @@ import { FaCreditCard } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import Newsletter from '../components/Newsletter';
 import Categories from '../components/Categories';
+import Question from '../components/Question';
 
 
 const Home = () => {
 
   return (
-    <main className='w-full flex flex-col justify-center items-center'>
+    <main className='w-full gap-10 flex flex-col justify-center items-center'>
       
       <section></section>
       <Slider />
@@ -25,7 +26,7 @@ const Home = () => {
       </section>
       <Categories/>
       <Newsletter />
-
+      <Question />
     </main>
   )
 }

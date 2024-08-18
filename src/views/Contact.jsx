@@ -24,7 +24,7 @@ const Contact = () => {
           <input type="text" className="p-4 rounded-md outline-none placeholder:text-black" placeholder="Your Name"></input>
           <input type="email" className="p-4 rounded-md outline-none placeholder:text-black" placeholder="Your Email" name="" id="" />
           <textarea className="p-4 placeholder:text-black rounded-md outline-none" placeholder="Enter Your Message Here!" id="" cols="10" rows='7'></textarea>
-          <button className="bg-black p-4 rounded-md outline-none text-white font-bold">Send Message</button>
+          <button className="bg-black p-4  hover:opacity-45 duration-300 rounded-md outline-none text-white font-bold">Send Message</button>
         </div>
         
       </form>

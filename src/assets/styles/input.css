@@ -24,7 +24,7 @@
   }
 
   .faqcard {
-    @apply hover:bg-black duration-200 rounded-3xl bg-[#F8F8F8] p-5 hover:text-white;
+    @apply hover:bg-black flex flex-col justify-center items-center duration-200 rounded-3xl bg-[#F8F8F8] p-5 hover:text-white;
   }
   .burger {
     @apply w-8 md:hidden cursor-pointer relative flex flex-col gap-2 justify-center items-center;
@@ -64,16 +64,12 @@ main{
   overflow: hidden;
 }
 .swiper {
-  width: 80%;
+  width: 100%;
   height: 60vh;
+  overflow: visible !important;
 }
 .marquee{
   @apply animate-marquee;
-/*   animation-fill-mode: forwards;
-  animation-duration: 10s;
-  animation-delay: 0; */
-  /* animation: marquee 10s linear ease-in 0 infinite alternate; */
- /*  animation-fill-mode: both; */
 }
 abbr[title]{
   text-decoration: none !important;
@@ -85,7 +81,7 @@ abbr[title]{
   text-align: center;
   width: 100%;
   font-size: 18px;
-  overflow: hidden !important;
+ /*  overflow: hidden !important; */
   background: #fff;
   @apply rounded-3xl;
 
@@ -98,9 +94,66 @@ abbr[title]{
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  @apply rounded-3xl;
+  object-fit: fill;
 }
 .s
 .spacer{
   @apply block;
+}
+
+.pin::after{
+  content: "";
+  @apply top-0 animate-ping absolute right-0 h-2 w-2 rounded-full bg-green-600;
+}
+.pin{
+  @apply relative ;
+}
+.swiper-pagination{
+  left: 50% !important;
+  bottom: -35px !important;
+  transform: translate(-50%, 0) !important;
+  width: fit-content !important;
+  background-color: #CCCCCC !important;
+  
+  @apply bg-[#F8F8F8] px-4 rounded-lg;
+  .swiper-pagination-bullet{
+    background: grey !important;
+  }
+  .swiper-pagination-bullet-active{
+    background: white !important;
+  }
+}
+.swiper-button-prev{
+  top: unset !important;
+  bottom: 5% !important;
+  left: unset !important;
+  right: clamp(35px,30vw,80px);
+}
+.swiper-button-next{
+  top: unset !important;
+  bottom: 5% !important;
+  right:clamp(30px,5%,30px);
+}
+.swiper-button-next,.swiper-button-prev{
+  @apply md:w-10 w-14;
+  border-radius: 100%;
+  opacity: 1;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.368);
+  &::after{
+    font-size: 20px !important;
+    color: white;
+  }
+}
+.video{
+  position: relative;
+  div{
+    background-color: rgba(0, 0, 0, 0.368);
+    position: absolute;
+    @apply rounded-3xl;
+    left: 0;
+    top: 0;
+    color: white;
+  }
 }

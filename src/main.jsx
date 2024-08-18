@@ -8,10 +8,12 @@ import {
 } from "react-router-dom";
 import Data from './Data.jsx';
 import { categories } from './Data.jsx';
-createRoot(document.getElementById('root')).render(
+const root = document.querySelector('#root');
+createRoot(root).render(
   <BrowserRouter>
     <Data.Provider  value={{categories:categories}}>
-       <Layout />
+      <StrictMode> <Layout /></StrictMode>
+      
     </Data.Provider>
   </BrowserRouter>
 

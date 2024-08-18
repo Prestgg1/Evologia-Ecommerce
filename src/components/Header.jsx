@@ -1,9 +1,24 @@
 import { NavLink } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 const Header = () => {
   const [active, setActive] = useState(false)
+  const handle = useRef(null)
+  function handleclick(e){
+    if(!handle.current.contains(e.target)){
+      document.removeEventListener("click",handleclick)
+      setActive(false)
+    }
+    else{
+      setActive(true)
+    }
+  }
+  useEffect(() => {
+    document.addEventListener("click",handleclick)
+  }, [active])
+
+  
   return (
-    <header className={`h-[85px] z-20 w-full relative px-[3rem] py-[1rem] ${active ? "" : "border-b-[1px]"}  `}>
+    <header ref={handle} className={`h-[85px] z-20 w-full relative px-[3rem] py-[1rem] ${active ? "" : "border-b-[1px]"}  `}>
       <nav className={`h-full flex  items-center justify-between`}>
       <NavLink to="/"><img src="/assets/indir.svg" alt="" className="h-full w-[162px]" /></NavLink>
       <div className="links h-9 desktop hidden md:flex gap-[50px] text-[#1f1f1f] font-extrabold">
@@ -27,5 +42,4 @@ const Header = () => {
     </header>
   )
 }
-
 export default Header
