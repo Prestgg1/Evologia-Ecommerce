@@ -1,27 +1,29 @@
 import { NavLink } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
 const Header = () => {
-  const [active, setActive] = useState(false)
-  const handle = useRef(null)
-  const burger = useRef(null) 
-  
-  function handleclick(e){
-    if(!handle.current.contains(e.target) || (active && burger.current.contains(e.target))) {
-      document.removeEventListener("click",handleclick)
-      setActive(false)
-    }
-    else if(handle.current.contains(e.target) && !active && burger.current.contains(e.target)){
-      setActive(true)
-    }
-    else{
-      setActive(false)
-    }
-  }
-  useEffect(() => {
-    document.addEventListener("click",handleclick)
-  }, [])
+  const [active, setActive] = useState(false);
+  const handle = useRef(null);
+  const burger = useRef(null);
 
-  
+  const handleclick = (e) => {
+    if (!handle.current.contains(e.target)) {
+      setActive(false);
+      document.removeEventListener("click", handleclick);
+      console.log('clicked outside, closing menu');
+    }
+  };
+
+  useEffect(() => {
+    if (active) {
+      document.addEventListener("click", handleclick);
+    } else {
+      document.removeEventListener("click", handleclick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleclick);
+    };
+  }, [active]);
   return (
     <header ref={handle} className={`h-[85px] z-20 w-full relative px-[3rem] py-[1rem] ${active ? "" : "border-b-[1px]"}  `}>
       <nav className={`h-full flex  items-center justify-between`}>
@@ -32,7 +34,7 @@ const Header = () => {
         <NavLink to="/faq">FAQ</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
-      <div ref={burger} className={`burger ${active ? "active" : ""}`}>
+      <div ref={burger} className={`burger ${active ? "active" : ""}`} onClick={() => {setActive(!active);console.log(active)}}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
