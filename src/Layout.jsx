@@ -9,12 +9,14 @@ import Faq from "./views/Faq";
 import Home from "./views/Home";
 import Store from "./views/Store"
 import Data from "./Data";
+
 import Policy from "./views/Policy";
 import {
   Routes,Route,
   Outlet
 } from "react-router-dom";
 import Terms from "./views/Terms";
+import ProductDetail from "./components/ProductDetail";
 
 const Layout = () => {
   const {status} = useContext(Data)
@@ -35,6 +37,7 @@ const Layout = () => {
           <Route path=":category" element={<Products />} />
           <Route path="" element={<Products />} />
         </Route>
+        <Route path="/product-details/:id" element={<ProductDetail/>}/>
       </Routes>
       <Outlet/>
     <Footer/>

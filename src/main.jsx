@@ -12,7 +12,7 @@ const root = document.querySelector('#root');
 createRoot(root).render(
   <BrowserRouter>
     <Data.Provider  value={{categories:categories}}>
-      <StrictMode> <Layout /></StrictMode>
+      <Layout />
       
     </Data.Provider>
   </BrowserRouter>

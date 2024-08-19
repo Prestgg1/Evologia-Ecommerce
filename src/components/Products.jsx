@@ -32,7 +32,7 @@ const Products = () => {
 
     <div className={`${loading?'flex':'grid'} grid-cols-1 w-full justify-center items-center md:grid-cols-2 place-items-center lg:grid-cols-3 gap-4 mt-8`}>
       {loading ?  <Loader/>: products.map(product => (
-            <NavLink key={product.id} to={`/store/${product.id}`}>
+            <NavLink key={product.id} to={`/product-details/${product.id}`}>
               <Product product={product} />
             </NavLink>
           ))}    
