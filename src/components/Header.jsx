@@ -3,18 +3,23 @@ import { useEffect, useRef, useState } from "react"
 const Header = () => {
   const [active, setActive] = useState(false)
   const handle = useRef(null)
+  const burger = useRef(null) 
+  
   function handleclick(e){
-    if(!handle.current.contains(e.target)){
+    if(!handle.current.contains(e.target) || (active && burger.current.contains(e.target))) {
       document.removeEventListener("click",handleclick)
       setActive(false)
     }
-    else{
+    else if(handle.current.contains(e.target) && !active && burger.current.contains(e.target)){
       setActive(true)
+    }
+    else{
+      setActive(false)
     }
   }
   useEffect(() => {
     document.addEventListener("click",handleclick)
-  }, [active])
+  }, [])
 
   
   return (
@@ -27,7 +32,7 @@ const Header = () => {
         <NavLink to="/faq">FAQ</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </div>
-      <div className={`burger ${active ? "active" : ""}`} onClick={() => setActive(!active)}>
+      <div ref={burger} className={`burger ${active ? "active" : ""}`}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
