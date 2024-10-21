@@ -7,6 +7,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 import Newsletter from '../components/Newsletter';
 import Categories from '../components/Categories';
 import Question from '../components/Question';
+import Testimonials from '../components/Testimonials';
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
         </span>
       </section>
       <Categories/>
+      {/* <Testimonials/> */}
       <Newsletter />
       <Question />
     </main>

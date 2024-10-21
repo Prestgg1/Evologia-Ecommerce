@@ -77,8 +77,6 @@ export default function Slider() {
       </div>
       <img className='h-2/3 w-1/2 hidden md:block' src='https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/1.png' alt="" />
       </div>}
-      
-          
         </SwiperSlide>
         <SwiperSlide>
         {!sliderproduct.length? null : 
@@ -86,7 +84,8 @@ export default function Slider() {
       <div className="detail lg:ml-20 flex lg:gap-10 gap-4  items-center lg:items-start  flex-col">
         <h1 className='text-2xl px-5 lg:text-6xl lg:text-start text-center font-extrabold'>Whay's New? It's Time For the Future</h1>
       <p className='text-xl lg:text-start text-center'>{sliderproduct[0].description}</p>
-      <div className='flex gap-2 justify-center items-center'>
+      <div className='flex gap-4 justify-center items-center'>
+        {/* Buttonlar */}
       <button className='bg-black font-extrabold text-white rounded-3xl py-4 self-start px-4' onClick={()=>{
         navigator('/product-details/'+sliderproduct[0].id)
       }}>Buy now - {sliderproduct[0].price}$ </button>

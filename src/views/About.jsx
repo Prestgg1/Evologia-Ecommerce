@@ -1,5 +1,5 @@
 import Newsletter from "../components/Newsletter"
-
+import Team from "../components/Team"
 const About = () => {
   return (
     <main className="w-full flex flex-col gap-10 justify-center items-center">
@@ -10,8 +10,6 @@ const About = () => {
       <div className="flex">
         <div className="card">
           <img src="https://framerusercontent.com/images/7F8k9K6p0c9fXnQwvZP6qO0L2k.png" alt="" />
-          {/* <span className="absolute"> <h1>Our Vision</h1><p>Smart homes are the homes of the future, where technology and convenience come together</p>
-          </span> */}
           </div>
           
         <div className="card">
@@ -21,6 +19,9 @@ const About = () => {
         <img src="https://framerusercontent.com/images/7F8k9K6p0c9fXnQwvZP6qO0L2k.png" alt="" />
           <h1>Our Approach</h1><p>Why not star building your smart home today and join the future of living!</p></div>
       </div>
+
+    <Team/>
+
       <Newsletter/>
     </main>
   )
