@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
+import { FaShoppingBasket } from "react-icons/fa";
+import useStore from "../store/product";
+
 const Header = () => {
+  const products = useStore((state) => state.products);
   const [active, setActive] = useState(false);
   const handle = useRef(null);
   const burger = useRef(null);
@@ -33,6 +37,10 @@ const Header = () => {
         <NavLink to="/about">About Us</NavLink>
         <NavLink to="/faq">FAQ</NavLink>
         <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/login" className="relative">
+        <FaShoppingBasket className="text-3xl"/>
+        <span className="absolute flex items-center justify-center bg-orange-500 rounded-full w-4 h-4 -top-2 text-white text-base right-0">{products.length}</span>
+        </NavLink>
       </div>
       <div ref={burger} className={`burger ${active ? "active" : ""}`} onClick={() => {setActive(!active);console.log(active)}}>
         <div className="line"></div>

@@ -23,7 +23,8 @@ useEffect(() => {
         ))}
         </div>
         <div className="flex justify-center ">
-        <button className="underline font-semibold text-2xl" onClick={() => setComments(rewiews)} >Load more</button>
+        {rewiews<!5? <button className="underline font-semibold text-2xl" onClick={() => setComments(rewiews)} >Load more</button>:''}
+       
         </div>
      
     </section>
