@@ -9,7 +9,7 @@ import Faq from "./views/Faq";
 import Home from "./views/Home";
 import Store from "./views/Store"
 import Data from "./Data";
-
+import Basket from "./views/Basket";
 import Policy from "./views/Policy";
 import {
   Routes,Route,
@@ -38,7 +38,7 @@ const Layout = () => {
           <Route path="" element={<Products />} />
         </Route>
         <Route path="/product-details/:id" element={<ProductDetail/>}/>
-        <Route path="/basket" element={<ProductDetail/>}/>
+        <Route path="/basket" element={<Basket/>}/>
       </Routes>
       <Outlet/>
     <Footer/>

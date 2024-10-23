@@ -743,8 +743,8 @@ body {
   position: relative;
 }
 
-.-top-10 {
-  top: -2.5rem;
+.-top-2 {
+  top: -0.5rem;
 }
 
 .bottom-5 {
@@ -769,22 +769,6 @@ body {
 
 .top-full {
   top: 100%;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.-top-5 {
-  top: -1.25rem;
-}
-
-.-top-3 {
-  top: -0.75rem;
-}
-
-.-top-2 {
-  top: -0.5rem;
 }
 
 .z-10 {
@@ -887,6 +871,10 @@ body {
   height: 5rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-40 {
   height: 10rem;
 }
@@ -919,8 +907,32 @@ body {
   height: 100%;
 }
 
-.h-4 {
-  height: 1rem;
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
+.min-h-\[60vh\] {
+  min-height: 60vh;
+}
+
+.min-h-\[50vh\] {
+  min-height: 50vh;
+}
+
+.min-h-\[30vh\] {
+  min-height: 30vh;
+}
+
+.min-h-\[40vh\] {
+  min-height: 40vh;
+}
+
+.min-h-\[45vh\] {
+  min-height: 45vh;
+}
+
+.min-h-\[43vh\] {
+  min-height: 43vh;
 }
 
 .w-1\/2 {
@@ -951,6 +963,10 @@ body {
   width: 5rem;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -973,10 +989,6 @@ body {
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .flex-1 {
@@ -1186,6 +1198,10 @@ body {
   border-radius: 0.75rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1196,6 +1212,11 @@ body {
 
 .border-none {
   border-style: none;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-slate-600 {
@@ -1236,6 +1257,21 @@ body {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-green-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1402,6 +1438,11 @@ body {
   font-size: 32px;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1410,11 +1451,6 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-\[1000\] {

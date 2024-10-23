@@ -37,7 +37,7 @@ const Header = () => {
         <NavLink to="/about">About Us</NavLink>
         <NavLink to="/faq">FAQ</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/login" className="relative">
+        <NavLink to="/basket" className="relative">
         <FaShoppingBasket className="text-3xl"/>
         <span className="absolute flex items-center justify-center bg-orange-500 rounded-full w-4 h-4 -top-2 text-white text-base right-0">{products.length}</span>
         </NavLink>
