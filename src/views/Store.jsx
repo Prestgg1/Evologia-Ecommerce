@@ -1,6 +1,5 @@
 import {React, useState,useEffect, useContext} from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-import Products from '../components/Products'
 import { PiLineVertical } from "react-icons/pi";
 import axios from 'axios';
 const Store = () => {
@@ -12,7 +11,8 @@ const Store = () => {
     })
   }, [])
   return (
-    <main>
+    
+    <main className='container'>
       <div className='flex flex-col lg:flex-row gap-6 font-extrabold justify-center items-center'>
         <h1 className='text-5xl tracking-widest font-[1000]'>store</h1>
         <PiLineVertical className='text-6xl hidden lg:block' />

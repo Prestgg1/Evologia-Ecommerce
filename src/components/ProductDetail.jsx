@@ -40,7 +40,7 @@ useEffect(() => {
   }
   let index = products.findIndex(p => p.id === willaddproduct.id);
   return (
-    <main className='w-full flex flex-col justify-start items-start'>
+    <main className='container flex flex-col justify-start items-start'>
 <div className="location flex justify-center mb-10 text-left items-center capitalize"> <Link className='hover:opacity-50 hover:border-b-2' to='/store'>store</Link> <IoIosArrowForward /> <Link to={`/store/${category?.slug}`}>{product.category}</Link> <IoIosArrowForward /> <Link className='font-bold' to={`/product-details/${id}`}>{product.title}</Link>  </div> 
 
       <div className="rounded-3xl  h-full detail justify-stretch items-stretch gap-5 p-4 md:p-5 bg-[#F8F8F8] flex-col flex lg:flex-row">
@@ -68,9 +68,9 @@ useEffect(() => {
               products.splice(index, 1);
               addToCard([...products]);
             }
-          }} className='bg-white text-black p-4 hover:opacity-45 h-full flex justify-center items-center duration-300 rounded-2xl border-2 border-black font-bold'>Decrement</button>
+          }} className='bg-white text-black p-4 hover:opacity-45 h-full flex justify-center items-center duration-300 rounded-2xl border-2 border-black font-bold'>-</button>
         <span>{products[index].quantity}</span>
-        <button className='bg-black p-4 hover:opacity-45 h-full flex justify-center items-center duration-300 rounded-2xl outline-none text-white font-bold' onClick={() => {  products[index] = { ...products[index], quantity: products[index].quantity + 1 }; addToCard([...products]); }}>Increment</button>
+        <button className='bg-black p-4 hover:opacity-45 h-full flex justify-center items-center duration-300 rounded-2xl outline-none text-white font-bold' onClick={() => {  products[index] = { ...products[index], quantity: products[index].quantity + 1 }; addToCard([...products]); }}>+</button>
        </div>: <button  onClick={()=>{
           if (index !== -1) {
             products[index] = { ...products[index], quantity: products[index].quantity + 1 };

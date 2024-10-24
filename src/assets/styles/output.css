@@ -793,6 +793,16 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -879,10 +889,6 @@ body {
   height: 10rem;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
 .h-9 {
   height: 2.25rem;
 }
@@ -905,30 +911,6 @@ body {
 
 .h-full {
   height: 100%;
-}
-
-.min-h-\[80vh\] {
-  min-height: 80vh;
-}
-
-.min-h-\[60vh\] {
-  min-height: 60vh;
-}
-
-.min-h-\[50vh\] {
-  min-height: 50vh;
-}
-
-.min-h-\[30vh\] {
-  min-height: 30vh;
-}
-
-.min-h-\[40vh\] {
-  min-height: 40vh;
-}
-
-.min-h-\[45vh\] {
-  min-height: 45vh;
 }
 
 .min-h-\[43vh\] {
@@ -989,6 +971,22 @@ body {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[10-vw\] {
+  width: 10-vw;
+}
+
+.w-\[100vw\] {
+  width: 100vw;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[95vw\] {
+  width: 95vw;
 }
 
 .flex-1 {
@@ -1249,29 +1247,24 @@ body {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-}
-
 .bg-green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1575,7 +1568,7 @@ main{
 .swiper {
   width: 100%;
   height: 65vh;
-  overflow: visible !important;
+  overflow: hidden;
 }
 
 @keyframes marquee {
@@ -1689,6 +1682,52 @@ abbr[title]{
     left: 0;
     top: 0;
     color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+      padding-right: 6rem;
+      padding-left: 6rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+      padding-right: 10rem;
+      padding-left: 10rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+      padding-right: 6rem;
+      padding-left: 6rem;
+    }
   }
 }
 
@@ -1854,6 +1893,10 @@ abbr[title]{
     gap: 0px;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:gap-8 {
     gap: 2rem;
   }
@@ -1882,6 +1925,16 @@ abbr[title]{
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:text-start {
@@ -1977,4 +2030,28 @@ abbr[title]{
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+}
+
+.\[\&\>li\]\:flex>li {
+  display: flex;
+}
+
+.\[\&\>li\]\:items-center>li {
+  align-items: center;
+}
+
+.\[\&\>li\]\:justify-start>li {
+  justify-content: flex-start;
+}
+
+.\[\&\>li\]\:justify-center>li {
+  justify-content: center;
+}
+
+.\[\&\>li\]\:gap-2>li {
+  gap: 0.5rem;
+}
+
+.\[\&\>li\]\:text-\[18px\]>li {
+  font-size: 18px;
 }

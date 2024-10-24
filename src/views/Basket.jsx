@@ -4,7 +4,7 @@ const Basket = () => {
   const addToCard = useStore((state) => state.addToCard)
   const products = useStore((state) => state.products);
   return (
-    <main className='min-h-[43vh] w-full'>
+    <main className='min-h-[43vh] container'>
       <h1 className='text-6xl font-extrabold mb-10 w-full text-center'>Basket</h1>
       <div className='w-full flex flex-col gap-10 justify-center items-center'>
         {products.map((product,index) => (

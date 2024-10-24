@@ -54,13 +54,13 @@ export default function Slider() {
           translate: ['100%', 0, 0],
         },
       }}
-      className="mySwiper relative" loop={true} pagination={{ clickable: true }}>
+      className="mySwiper  relative" loop={true} pagination={{ clickable: true }}>
         <SwiperSlide className='video'>
           <video autoPlay={true} loop={true} src="https://framerusercontent.com/modules/assets/5gUXbZNd9m8aCDu909tqY3v8~3lRSGA1dVv9QbNFa6PHyrOQftj0plqYdiVhYUvJQjEU.mp4" playsInline="" ></video>
           <div className='w-full text-center h-full flex  gap-4 md:gap-8 flex-col justify-center items-center'>
             <h1 className='text-3xl font-extrabold w-full md:w-1/2 md:text-5xl'>Fashion Meets Function: Evevate Your Style</h1>
             <p className='text-xl w-full md:w-1/2  md:text-2xl'>Timeless Elegance and Modern Tech Unite In Out Connected Watches</p>
-            <button className='bg-white duration-300 rounded-lg p-4 md:px-10 text-black font-extrabold hover:bg-opacity-50 '>Shop Now</button>
+            <button onClick={()=>navigator('/store')} className='bg-white duration-300 rounded-lg p-4 md:px-10 text-black font-extrabold hover:bg-opacity-50 '>Shop Now</button>
           </div>
         </SwiperSlide>
         <SwiperSlide>

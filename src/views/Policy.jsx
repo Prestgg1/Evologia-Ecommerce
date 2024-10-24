@@ -1,8 +1,12 @@
 import React from 'react'
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const Policy = () => {
   return (
-    <main>
+    <HelmetProvider>
+      <Helmet>
+        <title>Privacy Policy</title>
+      </Helmet>
+   <main className='container'>
       <h1 className='text-6xl font-extrabold mb-10 w-full text-center'>Privacy Policy</h1>
       <p>1. Introduction
 
@@ -94,6 +98,8 @@ We take reasonable measures to protect your information from unauthorized access
 
 If you have questions or concerns about this Privacy Policy or our data practices, please contact us at [Contact Information].</p>
     </main>
+    </HelmetProvider>
+ 
   )
 }
 

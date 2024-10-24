@@ -1,8 +1,15 @@
 import Newsletter from "../components/Newsletter"
 import Team from "../components/Team"
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const About = () => {
   return (
-    <main className="w-full flex flex-col gap-10 justify-center items-center">
+    <HelmetProvider>
+      <Helmet>
+        <title>About Us</title>
+        <meta name="description" content="About Us" />
+        <meta name="keywords" content="About Us" />
+      </Helmet>
+      <main className="container flex flex-col gap-10 justify-center items-center">
       <div className="bg-center rounded-3xl h-[60vh] justify-center flex items-center text-white font-extrabold text-5xl md:text-7xl bg-cover w-full" style={{ backgroundImage: "url('https://framerusercontent.com/images/puQFxihwf0c9TMWcHmUA5CzFpg.png')" }}>
         Our Story
       </div>
@@ -24,6 +31,8 @@ const About = () => {
 
       <Newsletter/>
     </main>
+    </HelmetProvider>
+  
   )
 }
 

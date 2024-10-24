@@ -16,7 +16,7 @@ const Question = () => {
 
       </div>
       <p className="w-1/3 text-center">Our customer support is available monday to friday: 8am-8:30pm.</p>
-      <Link to="/contact" className="bg-black flex justify-center items-center hover:opacity-45 duration-300 text-white rounded-xl font-extrabold text-2xl py-4 w-60" onClick={() => navigate('/contact')}>Contact us</Link>
+      <Link to="/contact" className="bg-black flex justify-center items-center hover:opacity-45 duration-300 text-white rounded-3xl font-extrabold text-2xl py-4 md:py-6 w-60" onClick={() => navigate('/contact')}>Contact us</Link>
     </div>
   )
 }

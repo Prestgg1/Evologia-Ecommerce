@@ -1,9 +1,7 @@
-import { useContext } from 'react';
-import Data from '../Data';
 import { NavLink } from 'react-router-dom';
-
+import useStore from '../store/product';
 const Categories = () => {
-  const { categories } = useContext(Data)
+  const categories = useStore((state) => state.categories)
   return (
     <section className="categories grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-center items-center my-10 w-5/6">
       {categories.map(category => (

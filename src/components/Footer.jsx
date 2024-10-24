@@ -1,5 +1,11 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -20,13 +26,13 @@ const Footer = () => {
             <li>Home 1</li>
             <li>Home 2</li>
           </ul>
-          <ul>
+          <ul className='[&>li]:flex [&>li]:justify-start [&>li]:gap-2 [&>li]:items-center'>
             <li className='font-bold'>Social Media</li>
-            <li>Twiter</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Telegram</li>
-            <li>Tiktok</li>
+            <li><FaTwitter/>  Twiter</li>
+            <li><FaInstagramSquare/> Instagram</li>
+            <li><FaFacebook/> Facebook</li>
+            <li><FaTelegram/> Telegram</li>
+            <li><FaTiktok/> Tiktok</li>
           </ul>
         </div>
       </div>

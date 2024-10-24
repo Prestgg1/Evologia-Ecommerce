@@ -4,7 +4,7 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <main className="w-full">
+    <main className="container">
       <form action="" className="bg-[#F8F8F8] my-10 gap-5  rounded-3xl p-10 flex flex-col md:flex-row justify-center md:items-start items-center" >
         <div className="texts flex justify-center items-center md:justify-normal md:items-start md:text-start text-center flex-col gap-7  basis-1/2">
           <h1 className="md:text-6xl text-6xl w-full md:w-2/3 font-extrabold">Get in touch with our team today</h1>

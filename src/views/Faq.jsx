@@ -2,9 +2,16 @@
 
 import Newsletter from "../components/Newsletter"
 import Question from "../components/Question"
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const Faq = () => {
   return (
-    <main className="flex flex-col gap-10">
+    <HelmetProvider>
+      <Helmet>
+        <title>Faq Page</title>
+        <meta name="description" content="Faq Page" />
+        <meta name="keywords" content="Faq Page" />
+      </Helmet>
+   <main className="flex flex-col gap-10 container">
       <h1 className="lg:text-[68px] text-4xl md:text-5xl mb-10  font-bold text-center">Frequently Asked  Questions
       </h1>
       <div className="grid grid-rows-3 gap-2 h-1/3 text-wrap grid-cols-4">
@@ -51,6 +58,8 @@ const Faq = () => {
 
       <Newsletter/>
     </main >
+    </HelmetProvider>
+ 
   )
 }
 

@@ -1,106 +1,113 @@
 import React from 'react'
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Terms = () => {
   return (
-    <main className='w-full'>
+    <HelmetProvider>
+      <Helmet>
+        <title>Terms & Conditions</title>
+      </Helmet>
+   <main className='container'>
 
-      <h1 className='w-full text-center text-6xl font-extrabold mb-10'>Terms & Conditions</h1>
+<h1 className='w-full text-center text-6xl font-extrabold mb-10'>Terms & Conditions</h1>
 
-      <ul className='list-inside  list-decimal'>
-        <li><b className='text-xl'>Acceptance of Terms</b>
-          <p>By accessing or using [Your E-commerce Website] ("we," "our," or "us"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our website or services</p>
-        </li>
-        <li>
-          <b className='text-xl'>Use of the Website</b>
-          <ol className='list-inside  list-[lower-alpha] '>
-            <li>Eligibility
-              <ul className='list-inside list-disc'>
-                <li>You must be at least [age] years old or the legal age in your jurisdiction to use our website and services. By using our services, you represent and warrant that you meet these age requirements</li>
-              </ul>
-            </li>
-          </ol>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-
-
+<ul className='list-inside  list-decimal'>
+  <li><b className='text-xl'>Acceptance of Terms</b>
+    <p>By accessing or using [Your E-commerce Website] ("we," "our," or "us"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our website or services</p>
+  </li>
+  <li>
+    <b className='text-xl'>Use of the Website</b>
+    <ol className='list-inside  list-[lower-alpha] '>
+      <li>Eligibility
+        <ul className='list-inside list-disc'>
+          <li>You must be at least [age] years old or the legal age in your jurisdiction to use our website and services. By using our services, you represent and warrant that you meet these age requirements</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+<ul>
+  <li>
+    <ul>
+      <li></li>
+    </ul>
+  </li>
+</ul>
 
 
 
 
 
-      b. Account Registration
 
-      You may be required to create an account to access certain features of our website. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.
 
-      c. Prohibited Activities
+b. Account Registration
 
-      You agree not to:
+You may be required to create an account to access certain features of our website. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.
 
-      Use our website for any unlawful purpose.
+c. Prohibited Activities
 
-      Engage in unauthorized access or tampering with our systems.
+You agree not to:
 
-      Use our website to distribute spam or other unsolicited communications.
+Use our website for any unlawful purpose.
 
-      Violate the rights of others, including intellectual property rights.
+Engage in unauthorized access or tampering with our systems.
 
-      Post, upload, or share content that is defamatory, obscene, or harmful.
+Use our website to distribute spam or other unsolicited communications.
 
-      3. Ordering and Payment
+Violate the rights of others, including intellectual property rights.
 
-      a. Orders
+Post, upload, or share content that is defamatory, obscene, or harmful.
 
-      When you place an order on our website, you agree to provide accurate and complete information. We reserve the right to cancel or refuse any order at our discretion.
+3. Ordering and Payment
 
-      b. Pricing and Payment
+a. Orders
 
-      Prices for products and services are as listed on our website. Payment is due at the time of purchase, and we accept [payment methods]. Prices are subject to change without notice.
+When you place an order on our website, you agree to provide accurate and complete information. We reserve the right to cancel or refuse any order at our discretion.
 
-      c. Shipping and Returns
+b. Pricing and Payment
 
-      Shipping and return policies are outlined on our website. By placing an order, you agree to these policies.
+Prices for products and services are as listed on our website. Payment is due at the time of purchase, and we accept [payment methods]. Prices are subject to change without notice.
 
-      4. Intellectual Property
+c. Shipping and Returns
 
-      All content on our website, including text, images, logos, and trademarks, is protected by intellectual property laws. You may not use, reproduce, or distribute our content without our express written consent.
+Shipping and return policies are outlined on our website. By placing an order, you agree to these policies.
 
-      5. Privacy
+4. Intellectual Property
 
-      Your use of our website is also governed by our Privacy Policy. Please review it to understand how we collect, use, and protect your personal information.
+All content on our website, including text, images, logos, and trademarks, is protected by intellectual property laws. You may not use, reproduce, or distribute our content without our express written consent.
 
-      6. Disclaimers and Limitation of Liability
+5. Privacy
 
-      a. Disclaimer of Warranties
+Your use of our website is also governed by our Privacy Policy. Please review it to understand how we collect, use, and protect your personal information.
 
-      Our website and services are provided "as is" and "as available" without any warranties, express or implied. We make no representations or warranties regarding the accuracy, reliability, or availability of our website or services
+6. Disclaimers and Limitation of Liability
 
-      b. Limitation of Liability
+a. Disclaimer of Warranties
 
-      To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.
+Our website and services are provided "as is" and "as available" without any warranties, express or implied. We make no representations or warranties regarding the accuracy, reliability, or availability of our website or services
 
-      7. Indemnification
+b. Limitation of Liability
 
-      You agree to indemnify and hold us harmless from any claims, losses, liabilities, and expenses (including attorney's fees) arising out of your use of our website or services, or your violation of these Terms and Conditions.
+To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.
 
-      8. Termination
+7. Indemnification
 
-      We reserve the right to terminate or suspend your access to our website and services at our discretion, without notice, for any violation of these Terms and Conditions.
+You agree to indemnify and hold us harmless from any claims, losses, liabilities, and expenses (including attorney's fees) arising out of your use of our website or services, or your violation of these Terms and Conditions.
 
-      7. Changes to this Privacy Policy
+8. Termination
 
-      We may update this Privacy Policy to reflect changes in our practices or for legal and regulatory reasons. We will notify you of any significant changes via email or by prominently posting a notice on our website.
+We reserve the right to terminate or suspend your access to our website and services at our discretion, without notice, for any violation of these Terms and Conditions.
 
-      8. Contact Us
+7. Changes to this Privacy Policy
 
-      If you have questions or concerns about this Privacy Policy or our data practices, please contact us at [Contact Information].
-    </main>
+We may update this Privacy Policy to reflect changes in our practices or for legal and regulatory reasons. We will notify you of any significant changes via email or by prominently posting a notice on our website.
+
+8. Contact Us
+
+If you have questions or concerns about this Privacy Policy or our data practices, please contact us at [Contact Information].
+</main>
+    </HelmetProvider>
+ 
   )
 }
 

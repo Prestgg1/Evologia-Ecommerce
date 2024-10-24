@@ -23,7 +23,7 @@ const Layout = () => {
   return (
     <>
     <Header/>
-    <div className="flex items-center z-10 flex-col container mt-10 md:mt-20">
+    <div className="w-full flex items-center z-10 flex-col  mt-10 md:mt-20">
       {status}
       <Routes>
        
@@ -41,7 +41,10 @@ const Layout = () => {
         <Route path="/basket" element={<Basket/>}/>
       </Routes>
       <Outlet/>
-    <Footer/>
+      <div className="container">
+      <Footer/>
+      </div>
+  
     </div>
     </>
   )
