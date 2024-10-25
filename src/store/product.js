@@ -19,17 +19,17 @@ const useStore = create((set) => ({
     },
     {
       id:3,
-      name:"menswear",
-      title:"men's clothing",
-      url:'/menswear',
-      img:'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg'
+      name:"motorcycle",
+      title:"motorcycle",
+      url:'/motorcycle',
+      img:'https://cdn.dummyjson.com/products/images/motorcycle/MotoGP%20CI.H1/thumbnail.png'
     },
     {
       id:4,
-      name:'womenswear',
-      title:"women's clothing",
-      url:'/womenswear',
-      img:'https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg'
+      name:'mobile accessories',
+      title:"mobile accessories",
+      url:'/mobile-accessories',
+      img:'https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png'
     }
   ],
   removeAllBears: () => set({ products: 0 }),

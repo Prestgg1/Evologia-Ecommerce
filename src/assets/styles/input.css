@@ -6,9 +6,9 @@
 @layer base {
 
   header .links a {
-    @apply  duration-200 w-max h-[30px];
+    @apply  duration-200 h-[30px];
     &:hover {
-      @apply border-[#ECD825] pb-2 border-b-4 border-solid -translate-y-2;
+    @apply border-[#ECD825] pb-2 border-b-4 border-solid -translate-y-2 h-[40px];
     }
 
   }

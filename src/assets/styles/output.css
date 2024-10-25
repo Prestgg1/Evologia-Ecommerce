@@ -448,9 +448,10 @@ video {
 
 header .links a {
   height: 30px;
-  width: -moz-max-content;
-  width: max-content;
   transition-duration: 200ms;
+  &:hover {
+    height: 40px;
+  }
   &:hover {
     --tw-translate-y: -0.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -793,16 +794,6 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -965,28 +956,20 @@ body {
   width: 162px;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[10-vw\] {
-  width: 10-vw;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
-}
-
 .w-\[90vw\] {
   width: 90vw;
 }
 
 .w-\[95vw\] {
   width: 95vw;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-1 {
@@ -1927,11 +1910,6 @@ abbr[title]{
     padding-right: 2.5rem;
   }
 
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -2044,14 +2022,6 @@ abbr[title]{
   justify-content: flex-start;
 }
 
-.\[\&\>li\]\:justify-center>li {
-  justify-content: center;
-}
-
 .\[\&\>li\]\:gap-2>li {
   gap: 0.5rem;
-}
-
-.\[\&\>li\]\:text-\[18px\]>li {
-  font-size: 18px;
 }
